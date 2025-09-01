@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="ToDoApp.css"/>
+</head>
+<body>
+  <h1 class="title">📋 My To-Do App</h1>
+
+  <div class="wrap">
+    <!-- Input Fields -->
+    <input type="text" id="listInput" class="field" placeholder="Add a new Task"/>
+    <input type="datetime-local" id="dueDate" class="field"/>
+
+    <!-- Button Row 1 -->
+    <div class="btn-group">
+      <button id="addT" class="btn btn-add">Add Task</button>
+      <button id="clearT" class="btn btn-clear">Clear All</button>
+      <button id="completeT" class="btn btn-done">Mark All Done</button>
+    </div>
+
+    <!-- Button Row 2 -->
+    <div class="btn-group">
+      <button id="alltsk" class="btn btn-filter">All</button>
+      <button id="completedtsk" class="btn btn-filter">Completed</button>
+      <button id="pendingtsk" class="btn btn-filter">Pending</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="tasklist" class="list"></ul>
+
+    <!-- Task Counter -->
+    <div id="taskCounter" class="counter">Total: 0 | Completed: 0 | Pending: 0</div>
+
+    <!-- Search -->
+    <input type="text" id="searchTask" class="search-bar" placeholder="🔍 Search Tasks..."/>
+  </div>
+
+  <script src="ToDoApp.js"></script>
+</body>
+</html>
